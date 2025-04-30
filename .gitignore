@@ -1,4 +1,23 @@
-*.jpg
-*.jpeg
-*.pdf
-*.png
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Don't ignore website images and PDFs that are needed for the site
+!pics/*.jpg
+!pics/*.jpeg
+!pics/*.png
+!pics/*.JPG
+
+# Keep PDFs for the website
+!pdfs/articles/*.pdf
+!pdfs/photo-essays/*.pdf
+
+# But ignore any other large binary files
+*.psd
+*.ai
+*.zip
+*.rar
+*.7z
+*.mp4
+*.mov
+*.sketch
